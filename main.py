@@ -26,13 +26,12 @@ def find_mismatch(text):
             if not are_matching(stackpop,next):
                 return Bracket(next,i+1).position
             pass
- if len(stack)==0:
-    return "Success"
-else:return index
+    if len(stack)==0:
+        return "Success"
+    else:return index
 
 def main():
-    test_input=input()
-    if text_input.startswith("I"):
+    
         text = input()
         mismatch = find_mismatch(text)
         print(mismatch)
