@@ -31,7 +31,8 @@ def find_mismatch(text):
     else:return index
 
 def main():
-    
+    command=input()
+    if command.startswith("I"):
         text = input()
         mismatch = find_mismatch(text)
         print(mismatch)
